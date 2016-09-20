@@ -1,0 +1,66 @@
+<!-- about.html -->
+    <div ng-controller="aboutController" class=container-fluid>
+      <br>
+      <br>
+      <!-- first level : About + Word Cloud -->
+      <div id="aboutMe" class="row">
+        
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="col-xs-6">
+            <p id="aboutMe"> 
+              I am a Masters student at University of California, San Diego, graduating in Fall-2016.
+            </p>
+          </div>
+          
+          <div class="col-xs-6">
+            <center>
+            <img class="wcImgBorder" id="wordCloudImg" src="https://farm9.staticflickr.com/8286/28949030902_7328ff0530_m.jpg" width=500 height=500
+              title="Word Cloud generated from mv CV and Linkedin Profile">
+              <p id="textWordC"> Word Cloud generated from mv CV and Linkedin Profile </p>
+            </center>
+          </div>
+          
+        </div> <!-- end col 12 --> 
+        </div> <!-- end row --> 
+        </div> <!-- end about me -->
+<br>
+<br>
+<br>
+<!-- Second level : Skills -->
+      <div id="skills">
+        <h1 id="skillsText"> Programming Skills </h1>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-4">
+              </div>
+              <div class="col-xs-8">
+                <canvas id="skill" width="600" height="300"></canvas>
+                <script src="SkillChart.js"> </script>
+                </div>
+        </div> 
+        </div>
+      </div> <!-- end skills -->
+
+<br>
+<br>
+<br>
+<!-- Third level : Interest -->
+      <div id="interests">
+        <h1 id="skillsText"> Interests </h1>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-4">
+              </div>
+              <div class="col-xs-8">
+                <canvas id="interest" width="600" height="300"></canvas>
+                <script src="PieChart.js"> </script>
+                </div>
+        </div> 
+        </div>
+      </div> <!-- end skills -->
+
+    
+    <br> 
+    
+    </div> <!-- main container for about -->

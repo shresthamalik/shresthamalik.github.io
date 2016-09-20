@@ -1,0 +1,39 @@
+<!-- contact.html -->
+<div ng-controller="contactController" class="container">
+     <div class="col-xs-10">
+     <h2 > Send me an email </h2> 
+     <p id="promise"> I promise to respond within 72 hours</p>
+     
+     <div id="SubmitMessage" ng-show="message">{{ message }}</div>
+     <form id="email-form" class="form-horizontal"  ng-submit="emailMe()">
+           <div id="contactName" class="form-group row">
+             <label for="Name" class="control-label col-xs-2 col-form-label"> Name </label>
+             <input type="text" class="col-xs-10" id="Name" name="name" ng-model='user.name' placeholder="James Bond" required> 
+              <span ng-show="email-form.Name.$touched && email-form.Name.$invalid">The name is required.</span>        
+            <span class="help-block"></span>
+            
+             </div>
+           
+           <div id="contactEmail" class="form-group">
+           <label for="Email" class="control-label col-xs-2 col-form-label"> Email </label>
+           <input type="email" id="Email" class="col-xs-10" ng-model='user.email' placeholder="bondjames007@jamesbond.com" name="_replyto"> 
+           <span ng-show="email-form.Email.$touched && email-form.Email.$invalid">The name is required.</span>
+            <span class="help-block"></span>
+           </div>
+             
+           <div id="contactMessage" class="form-group">
+             <label for="Message" class="control-label col-xs-2 col-form-label" > Message </label>
+             <textarea id="Message" rows="6" class="col-xs-10" ng-model='user.message' placeholder="I have the license to kill." name="message"> </textarea>
+          <span class="help-block"></span>
+          </div>
+             
+            <div class="form-group"> 
+              <div id="contactSubmitButton" class="col-sm-offset-2 col-xs-8">
+                  <button type="submit" class="btn btn-success btn-outline" data-toggle="button" style="float:right">Submit</button>
+              </div>
+            </div>
+         
+     </form>
+     </div> <!-- email container -->
+   
+</div> <!-- Main container -->

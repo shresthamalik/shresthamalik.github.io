@@ -1,0 +1,194 @@
+/* Styles go here */
+
+
+#MyName{
+  color: YellowGreen;
+  font-family: Pacifico;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+#MyTag{
+  color: YellowGreen;
+  font-family: Monospace;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom:10px;
+}
+
+#promise{
+  color: YellowGreen;
+  font-family: Pacifico;
+  text-align: left; 
+  padding:10px;
+}
+
+h1{
+  color: YellowGreen;
+  font-family: Pacifico;
+  text-align: center;
+}
+
+
+h2{
+  color: YellowGreen;
+  font-family: Pacifico;
+  text-align: left;
+  padding-top: 10px;
+}
+
+h3{
+  color: YellowGreen;
+  font-family: Pacifico;
+} 
+
+
+#email-form{
+  font-family:Monospace;
+  color: YellowGreen;
+  font-size:20px;
+  padding:10px;
+}
+
+#skillsText
+{
+  color: YellowGreen;
+  font-family: Pacifico;
+}
+#linkedinLink{
+ align-items:flex-end;
+ 
+}
+
+#linkedInImg{
+  width: 10%;
+}
+
+.wcImgBorder{
+  border-color: YellowGreen;
+  border-width: 10px;
+  border-style: dotted solid double dashed;
+  border-radius: 60%;
+}
+
+#HF-urls{
+ text-align:right ;
+}
+
+#aboutMe{
+  color: YellowGreen;
+   font-family: Monospace ;
+}
+#gitHubImg{
+  width: 10%;
+}
+
+#textWordC{
+ color: Orange ;
+ font-family: Monospace ;
+ font-size: 10px;
+}
+
+#contactEmail{
+  margin: 20px;  
+}
+
+#contactSubmitButton{
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+#contactName{
+  margin: 20px;  
+}
+
+#contactMessage{
+  margin:20px;  
+}
+
+.nav>li>a {
+    background-color: transparent;
+    color: YellowGreen;
+    font-family: Monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 4px; 
+    padding-bottom: 4px;
+    border-style: none;
+      
+}
+
+.nav>li>a:hover{
+  background-color:YellowGreen;
+	color: white;
+	
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.navbar-header{
+    border-bottom: none;
+}
+ 
+#textFooter{
+ color: white;
+ font-family: Monospace ;
+ font-size: 8px;
+}
+
+#header{
+  background-color: transparent;
+  color: YellowGreen;
+  border-bottom: none;
+}
+
+.nav-tabs{
+  color: YellowGreen;
+}
+
+#headerTabs{
+  color: white;
+}
+#footer{
+  background-color: transparent;
+  margin-bottom: 5px ;
+  border-bottom: none;
+}
+
+
+
+/* -- Portfolio  */
+#portfolioThumbnail{
+ border: solid;
+ font-family: Monospace;
+ border-color: orange YellowGreen ;
+  width: 240px;
+  height: 240px;
+  margin: 15px 15px 15px 15px;
+}
+
+#portImage{
+  width: 220px;
+  height:160px;
+}
+#portfolioGrid{
+  margin: 20px 20px 10px 40px;
+}
+
+#ThumbImage{
+  width: 220px;
+  height: 220px;
+  border:hidden;
+  color: orange;
+}
