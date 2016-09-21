@@ -65,12 +65,69 @@ h3{
   width: 10%;
 }
 
+/* Word Cloud Image */
+
+
 .wcImgBorder{
   border-color: YellowGreen;
   border-width: 10px;
   border-style: dotted solid double dashed;
   border-radius: 60%;
 }
+
+#wordCloudImg{
+    transition-duration: 10s;
+    transition-property: transform;
+    
+}
+
+#wordCloudImg:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+#myPic{
+ border-color: YellowGreen;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 10%;
+  margin:10px;
+}
+
+/*
+#circle {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 100%;
+    background: transparent;
+    border-color: YellowGreen;
+    border-width: 1px;
+    border-style: dotted;
+    text-align: center;
+    }
+*/
+#circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 15px;
+  color:YellowGreen;
+  line-height: 0px;
+  text-align: center;
+  background: transparent;
+  border-color: YellowGreen;
+  border-width: 1px;
+  border-style: dotted;
+}
+
+
+#circleText{
+  margin:5px;
+  padding: 10px;
+}
+
 
 #HF-urls{
  text-align:right ;
@@ -159,6 +216,8 @@ h3{
 
 #headerTabs{
   color: white;
+  margin: 5px;
+  /*padding: 5px; */
 }
 #footer{
   background-color: transparent;
@@ -170,9 +229,10 @@ h3{
 
 /* -- Portfolio  */
 #portfolioThumbnail{
- border: solid;
+ border: dotted;
  font-family: Monospace;
- border-color: orange YellowGreen ;
+ border-color: DarkGreen ;
+ border-radius: 10%;
   width: 240px;
   height: 240px;
   margin: 15px 15px 15px 15px;
@@ -190,5 +250,5 @@ h3{
   width: 220px;
   height: 220px;
   border:hidden;
-  color: orange;
+  color: DarkGreen;
 }

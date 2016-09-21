@@ -19,10 +19,11 @@
       
       <div id="portfolioGrid">
         <div ng-repeat="p in projects">
-            <div class="clearfix" ng-if="$index % 3 == 0"></div>
-            <div id="portfolioThumbnail" class="col-xs-4">
+            <div class="clearfix" ng-if="$index % 2 == 0"></div>
+            <div id="portfolioThumbnail" class="col-xs-6">
                 <a id="ThumbImage" href={{p.link}} class="thumbnail" target="_blank"><img id="portImage" src={{p.imageSrc}} alt={{p.name}}> {{$parent.$index}} {{p.name}} | {{p.source}} | {{p.period}}  </a>
             </div>
+            
         </div>
       </div>
       

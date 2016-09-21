@@ -39,10 +39,11 @@ function makeChart(){
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-          labels: ["Java", "Python", "C++", "Sql", "Html/CSS"],
+          labels: ["Java", "Python", "Matlab", "Sql","C/C++","Html/CSS",
+          "JavaScript","Angular JS", "jQuery","PySpark","Keras"],
           datasets: [{
               label: 'Skill Level',
-              data: [90, 90, 70, 80, 40],
+              data: [90, 90, 70, 70, 40,60,50,50,50,60,50],
               backgroundColor: [
                   'rgba(128, 205, 50,0.8)',
                   'rgba(89, 205, 50,0.8)',
