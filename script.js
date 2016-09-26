@@ -37,37 +37,76 @@ portfolioAppModule.config(function($routeProvider){
 portfolioAppModule.controller("aboutController",function($scope){
   $scope.message="About page";
   
+  $scope.interests= [
+    {name:'Software Development', color:'DeepPink'},
+    {name:'Machine Learning', color:'DarkTurquoise '},
+    {name:'Web Development', color:'DarkViolet'},
+    {name:'Object Oriented Design', color: 'LightSeaGreen' },
+    {name:'Data Mining', color:'Tomato', },
+    {name:'Front end Development', color:'Purple'},
+    {name:'Distributed Systems' , color: 'Teal'},
+    {name:'Computer Vision' , color: 'MediumTurquoise'},
+    {name:'Back end Development', color:'SlateBlue'},
+    {name:'Parallel Computing', color: 'Crimson'},
+    {name:'Neural Networks' , color:'DarkMagenta '}
+    ];
+  
 });
 
 portfolioAppModule.controller("portfolioController",function($scope){
   $scope.message='Portfolio';
+  
+  $scope.showPopover = function(data) {
+    this.popoverIsVisible = true; 
+    this.description=data;
+ };
+
+  $scope.hidePopover = function () {
+    this.popoverIsVisible = false;
+  };
+  
+  
+  
   $scope.projects = [
     // Proj 1
     {name:'Facial Expression Recognition', 
     source:'Academic Project', period:"May '16",
     link:'',
-    imageSrc: 'https://farm9.staticflickr.com/8292/29377358636_2c8b182a59_b.jpg'
+    desc:'Built a convolutional neural network that achieves a classification accuracy of 65% ' + 
+    'on the Kaggle Facial Expression Recognition Dataset(FER-2013). '+
+    'This accuracy matches the human accuracy on the dataset.The dataset has around 35890 images ' +
+    'of human faces labeled with one of the 7 expressions(0=Angry, 1=Disgust, 2=Fear, 3=Happy, '+
+    '4=Sad, 5=Surprise, 6=Neutral).',
+    imageSrc: 'https://farm9.staticflickr.com/8573/29892502666_6bbaae30f3_m.jpg'
     },
     
     //Proj 2
     {name:'Random Quote Generator', 
     source:'Free Code Camp', period:"Aug '16",
     link:'http://codepen.io/sMalik/full/JKmBZm/',
+    desc:'Designed a web-app that displays random quotes from movies on click of a button. '+
+    'Used Random Famous Quotes API from mashape for this. It is also possible to tweet the quote.',
     imageSrc: 'https://farm9.staticflickr.com/8455/29303216162_9c0b440cb6_b.jpg'
+    
     },
     
     //Proj 3
     {name:'Weather App', 
     source:'Free Code Camp', period:"Aug '16",
     link:'http://codepen.io/sMalik/full/NAZjWw/',
+    desc:'This webapp uses geolocation to get the current location coordinates of the user and '+
+    'then makes an API call to OpenWeatherMap to get the local weather for that location.' +
+    'Also displays the current location on map ',
     imageSrc: 'https://farm9.staticflickr.com/8284/29411895355_c8bef7a897_b.jpg'
     },
     
     //Proj 4
-    {name:'Leet Code Problem Solutions', 
+    {name:'Leet Code Problems\' Solutions', 
     source:'', period:"Ongoing",
     link:'https://github.com/shresthamalik/LeetCode',
-    imageSrc: 'https://leetcode.com/apple-touch-icon-144x144.png'
+    desc:'I love solving the algorithm and data structures problems on various online portals. '+
+    'My solutions to few of the problems on leetcode are here.',
+    imageSrc: 'https://farm9.staticflickr.com/8355/29927458085_d5ec92606e_m.jpg'
     }
     
   ];

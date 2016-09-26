@@ -19,11 +19,16 @@
       
       <div id="portfolioGrid">
         <div ng-repeat="p in projects">
-            <div class="clearfix" ng-if="$index % 2 == 0"></div>
-            <div id="portfolioThumbnail" class="col-xs-6">
-                <a id="ThumbImage" href={{p.link}} class="thumbnail" target="_blank"><img id="portImage" src={{p.imageSrc}} alt={{p.name}}> {{$parent.$index}} {{p.name}} | {{p.source}} | {{p.period}}  </a>
+            <div class="clearfix" ng-if="$index % 1 == 0"></div>
+            <div id="portfolioThumbnail" class="col-xs-5" ng-mouseover="showPopover(p.desc)" ng-mouseleave="hidePopover()">
+                <a id="ThumbImage" href={{p.link}} class="thumbnail" target="_blank"><img id="portImage" src={{p.imageSrc}} alt={{p.name}}></a>
             </div>
-            
+            <div class="col-xs-1">
+              </div>
+            <div class="col-xs-6">
+                <p id="ThumbHead" class="thumbnail"> {{$parent.$index}} {{p.name}} </p>
+                <p id="ThumbDesc" ng-show="popoverIsVisible" ng-bind="description"> </p>
+            </div>
         </div>
       </div>
       

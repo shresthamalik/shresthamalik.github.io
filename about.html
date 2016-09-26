@@ -40,7 +40,8 @@
 <br>
 <!-- Second level : Skills -->
       <div id="skills">
-        <h1 id="skillsText"> Programming Skills </h1>
+        <h1 id="skillsText">Skills </h1>
+        <p id="interestsText"> Programming </p>
         <div class="row">
           <div class="col-xs-12">
             <div class="col-xs-1">
@@ -53,6 +54,27 @@
             </div>
         </div> 
         </div>
+        <p id="interestsText"> Interests </p>
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-1">
+                </div>
+            
+          <div id="interestGrid">
+              <div ng-repeat="interest in interests">
+                  <div class="clearfix" ng-if="$index % 3 == 0"></div>
+                  <div class="col-xs-4">
+                      <p  style="color:{{interest.color}}" id="interestText"> {{interest.name}} </p>
+                  </div>
+                  
+              </div>
+          </div>
+            
+        </div> 
+        </div>
+        
+        
       </div> <!-- end skills -->
 
 <br>

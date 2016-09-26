@@ -40,16 +40,24 @@ function makeChart(){
       type: 'bar',
       data: {
           labels: ["Java", "Python", "Matlab", "Sql","C/C++","Html/CSS",
-          "JavaScript","Angular JS", "jQuery","PySpark","Keras"],
+          "JavaScript","Bootsrap","Angular JS", "jQuery","PySpark","Keras"],
           datasets: [{
-              label: 'Skill Level',
-              data: [90, 90, 70, 70, 40,60,50,50,50,60,50],
+              //label: 'Skill Level',
+              data: [90, 90, 60, 60, 60, 60, 60, 60, 30, 30, 60, 60],
               backgroundColor: [
-                  'rgba(128, 205, 50,0.8)',
-                  'rgba(89, 205, 50,0.8)',
-                  'rgba(50, 205, 50,0.8)',
-                  'rgba(50, 205, 89,0.8)',	
-                  'rgba(50, 205, 128,0.8)'
+                  '#FFA500',
+                  '#DDA0DD',
+                  '#DB7093',
+                  '#FF6347',	
+                  '#EE82EE',
+                  'rgba(255,99,132,1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  '#48D1CC',
+                  '#8FBC8F'
+                  
               ],
               /*
               borderColor: [
@@ -69,22 +77,50 @@ function makeChart(){
             // Boolean - whether to maintain the starting aspect ratio or not when responsive, 
             //if set to false, will take up entire container
           maintainAspectRatio: true,
-
+        legend: {
+                display: false
+            },
         scales: {
           xAxes: [{
+                      ticks:{
+                        fontColor:'#663399',
+                        fontFamily:'Monospace',
+                        fontStyle:'Bold',
+                      },
+                      
                       gridLines: {
-                          display:false
+                        display:false
                       }
                   }],
-          yAxes: [{
+          yAxes: [{ 
+                      
                       ticks: {
-                          suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                          suggestedMax: 100
-                        },
+                        fontColor:['#DB7093'],
+                        fontFamily:'Monospace',
+                        fontStyle:'Bold',
+                        fontSize: 14,
+                        min: 0,    // minimum will be 0, unless there is a lower value.
+                        max: 90,
+                        stepSize: 30,
+                        beginAtZero: true,
+                        //maxTicksLimit:5,
+                        callback: function(value, index, values){
+                          if(value>=90)    
+                            return 'Proficient';
+                          else if(value>=60)    
+                            return 'Intermediate';
+                          else if(value>=30)    
+                            return 'Beginner';
+                          else
+                            return 'Just picked';
+                        } 
+                        
+                      },
             
                       gridLines: {
                           display:false
-                      }   
+                      }
+                        
                   }]
         }
     }

@@ -55,6 +55,8 @@ h3{
 {
   color: YellowGreen;
   font-family: Pacifico;
+  margin:50px;
+  text-align: left;
 }
 #linkedinLink{
  align-items:flex-end;
@@ -64,6 +66,21 @@ h3{
 #linkedInImg{
   width: 10%;
 }
+
+#interestsText
+{
+  color: Salmon;
+  font-family: Pacifico;
+  margin:10px;
+  text-align: left;
+  font-size:30px;
+}
+#interestText{
+  font-family:'David Libre','Open-sans';
+  font-size:20px;
+  font-style: bold;
+}
+
 
 /* Word Cloud Image */
 
@@ -82,8 +99,8 @@ h3{
 }
 
 #wordCloudImg:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(90deg);
+     transform: rotate(90deg);
 }
 
 #myPic{
@@ -229,26 +246,84 @@ h3{
 
 /* -- Portfolio  */
 #portfolioThumbnail{
- border: dotted;
+ border: double;
  font-family: Monospace;
- border-color: DarkGreen ;
+ border-color: Salmon ;
  border-radius: 10%;
-  width: 240px;
+ border-width: 6px;
+    
+  width: 360px;
   height: 240px;
   margin: 15px 15px 15px 15px;
+  padding: 5px;
 }
 
+
+
+
 #portImage{
-  width: 220px;
-  height:160px;
+  width: 320px;
+  height:200px;
 }
 #portfolioGrid{
   margin: 20px 20px 10px 40px;
 }
 
 #ThumbImage{
-  width: 220px;
+  width: 340px;
   height: 220px;
   border:hidden;
   color: DarkGreen;
 }
+
+
+#ThumbHead{
+  font-family: 'David Libre','Open Sans',sans-serif;
+  font-size:25px;
+  color: #EA3556;
+  font-style:bold;
+  border:hidden;
+  margin:5px;
+}
+
+#ThumbDesc{
+  font-family: 'David Libre','Open Sans',sans-serif;
+  font-size:15px;
+  color: black;
+  font-style:italic;
+  border:hidden;
+  padding: 10px;
+
+}
+
+
+
+@keyframes animateBorder {
+  to {
+    outline: 6px dashed #FFFFFF;
+    box-shadow: 0 0 0 6px Salmon;
+    
+  }
+}
+
+
+#portfolioThumbnail:hover{
+  /*
+  outline: 6px dashed yellow;
+  box-shadow: 0 0 0 6px #EA3556;
+  outline: 6px dashed Salmon;
+  box-shadow: 0 0 0 6px #FFFFFF;
+  border-radius: 10%;
+  border-color:white;
+  animation: 1s animateBorder 3s;
+   
+  */
+   /*border:double; 
+   border-color: Salmon; */
+  
+ transform: scale(1.01);
+  box-shadow: 0 0 0 4px #EA3556;
+}
+
+
+
