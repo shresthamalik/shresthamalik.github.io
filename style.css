@@ -95,7 +95,6 @@ h3{
 #wordCloudImg{
     transition-duration: 10s;
     transition-property: transform;
-    
 }
 
 #wordCloudImg:hover {
@@ -151,7 +150,8 @@ h3{
 }
 
 #aboutMe{
-  color: YellowGreen;
+  color: MediumPurple ;
+  font-size:15px;
    font-family: Monospace ;
 }
 #gitHubImg{
@@ -325,5 +325,19 @@ h3{
   box-shadow: 0 0 0 4px #EA3556;
 }
 
-
-
+/* To push footer to the bottom*/
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
+}
