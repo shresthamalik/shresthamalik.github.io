@@ -4,7 +4,7 @@
       <br>
       <!-- first level : About + Word Cloud -->
       <div id="aboutMe" class="row">
-        
+
       <div class="row">
         <div class="col-xs-12">
           <div class="col-xs-6">
@@ -12,32 +12,32 @@
             <center>
             <img id="myPic" align="left" src="https://farm9.staticflickr.com/8234/29526936790_cd017b1be8_m.jpg"
             width=200 height=250>
-             </center>  
-              
+             </center>
+
             </div>
             <br>
-            
-            <p id="aboutMe"> 
-              I am a final year Masters student of Computer Science at University of California, San Diego. 
-              I have a wide range of interests from Machine Learning, to algorithms, to UI/UX design...  
-              The underlying thread is a desire to create smart, efficient, applications that people love to use. 
-              I am an avid programmer and a big fan of camelCase and indentation. 
+
+              <p id="aboutMe">
+              I am a final year Masters student of Computer Science at University of California, San Diego.
+              I have a wide range of interests from Machine Learning, to algorithms, to UI/UX design...
+              The underlying thread is a desire to create intelligent, efficient and reliable applications that people love to use.
+              I am an avid programmer and a big fan of camelCase and indentation.
             </p>
-             
+
           </div>
-          
+
           <div class="col-xs-6">
             <center>
-            <img class="wcImgBorder" id="wordCloudImg" 
-            src="https://farm9.staticflickr.com/8286/28949030902_7328ff0530_m.jpg" 
+            <img class="wcImgBorder" id="wordCloudImg"
+            src="https://farm9.staticflickr.com/8286/28949030902_7328ff0530_m.jpg"
             width=500 height=500
               title="Word Cloud generated from mv CV and Linkedin Profile">
               <p id="textWordC"> Word Cloud generated from mv CV and Linkedin Profile </p>
             </center>
           </div>
-          
-        </div> <!-- end col 12 --> 
-        </div> <!-- end row --> 
+
+        </div> <!-- end col 12 -->
+        </div> <!-- end row -->
         </div> <!-- end about me -->
 <br>
 <br>
@@ -56,35 +56,35 @@
               </div>
             <div class="col-xs-1">
             </div>
-        </div> 
+        </div>
         </div>
         <p id="interestsText"> Interests </p>
-        
+
         <div class="row">
           <div class="col-xs-12">
             <div class="col-xs-1">
                 </div>
-            
+
           <div id="interestGrid">
               <div ng-repeat="interest in interests">
                   <div class="clearfix" ng-if="$index % 3 == 0"></div>
                   <div class="col-xs-4">
                       <p  style="color:{{interest.color}}" id="interestText"> {{interest.name}} </p>
                   </div>
-                  
+
               </div>
           </div>
-            
-        </div> 
+
         </div>
-        
-        
+        </div>
+
+
       </div> <!-- end skills -->
 
 <br>
 <br>
 <br>
-<!-- Third level : Interest 
+<!-- Third level : Interest
       <div id="interests">
         <h1 id="skillsText"> Interests </h1>
         <div class="row">
@@ -95,13 +95,13 @@
                 <canvas id="interest" width="600" height="300"></canvas>
                 <script src="PieChart.js"> </script>
                 </div>
-        </div> 
         </div>
-      </div> 
-      end skills 
+        </div>
+      </div>
+      end skills
       -->
 
-    
-    <br> 
-    
+
+    <br>
+
     </div> <!-- main container for about -->
