@@ -3,7 +3,7 @@
 
 #MyName{
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
   text-align: center;
   padding-top: 10px;
   padding-bottom:10px;
@@ -19,28 +19,29 @@
 
 #promise{
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
-  text-align: left;
+  font-family: Monospace;
+  font-size:20px;
+  text-align: center;
   padding:10px;
 }
 
 h1{
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
   text-align: center;
 }
 
 
 h2{
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
   text-align: left;
   padding-top: 10px;
 }
 
 h3{
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
 }
 
 
@@ -54,7 +55,7 @@ h3{
 #skillsText
 {
   color: YellowGreen;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
   margin:50px;
   text-align: left;
 }
@@ -70,7 +71,7 @@ h3{
 #interestsText
 {
   color: Salmon;
-  font-family: Pacifico, Monospace;
+  font-family: Pacifico;
   margin:10px;
   text-align: left;
   font-size:30px;
@@ -150,10 +151,10 @@ h3{
 }
 
 #aboutMe{
-  color: Salmon;
-  font-family:'David Libre','Open-sans';
+  font-family:'David-libre','Open-sans';
   font-size:20px;
   font-style: bold;
+  color: Salmon;
 }
 #gitHubImg{
   width: 10%;
@@ -258,8 +259,6 @@ h3{
   margin: 15px 15px 15px 15px;
   padding: 5px;
 }
-
-
 
 
 #portImage{

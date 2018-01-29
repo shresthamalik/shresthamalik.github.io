@@ -18,7 +18,7 @@ $(window).scroll(function() {
         inView = true;
         makeChart();
     } else {
-        inView = false;  
+        inView = false;
     }
 });
 
@@ -28,7 +28,7 @@ $(window).scroll(function() {
         inView = true;
         makePieChart();
     } else {
-        inView = false;  
+        inView = false;
     }
 });
 
@@ -39,16 +39,16 @@ function makeChart(){
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-          labels: ["Java", "Python", "Matlab", "Sql","C/C++","Html/CSS",
-          "JavaScript","Bootsrap","Angular JS", "jQuery","PySpark","Keras"],
+          labels: ["Java", "Python","C++", "Matlab", "Tensorflow","Caffe", "Sql","Html/CSS",
+          "JavaScript","Bootsrap","Angular JS", "jQuery"],
           datasets: [{
               //label: 'Skill Level',
-              data: [90, 90, 60, 60, 60, 60, 60, 60, 30, 30, 60, 60],
+              data: [90, 90, 90, 60, 60, 60, 60, 60, 60, 60, 30, 30,],
               backgroundColor: [
                   '#FFA500',
                   '#DDA0DD',
                   '#DB7093',
-                  '#FF6347',	
+                  '#FF6347',
                   '#EE82EE',
                   'rgba(255,99,132,1)',
                   'rgba(54, 162, 235, 1)',
@@ -57,7 +57,7 @@ function makeChart(){
                   'rgba(153, 102, 255, 1)',
                   '#48D1CC',
                   '#8FBC8F'
-                  
+
               ],
               /*
               borderColor: [
@@ -71,10 +71,10 @@ function makeChart(){
               borderWidth: 1
           }]
       },
-      
+
       options:{
           responsive: true,
-            // Boolean - whether to maintain the starting aspect ratio or not when responsive, 
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive,
             //if set to false, will take up entire container
           maintainAspectRatio: true,
         legend: {
@@ -87,13 +87,13 @@ function makeChart(){
                         fontFamily:'Monospace',
                         fontStyle:'Bold',
                       },
-                      
+
                       gridLines: {
                         display:false
                       }
                   }],
-          yAxes: [{ 
-                      
+          yAxes: [{
+
                       ticks: {
                         fontColor:['#DB7093'],
                         fontFamily:'Monospace',
@@ -105,26 +105,24 @@ function makeChart(){
                         beginAtZero: true,
                         //maxTicksLimit:5,
                         callback: function(value, index, values){
-                          if(value>=90)    
+                          if(value>=90)
                             return 'Proficient';
-                          else if(value>=60)    
+                          else if(value>=60)
                             return 'Intermediate';
-                          else if(value>=30)    
+                          else if(value>=30)
                             return 'Beginner';
                           else
                             return 'Just picked';
-                        } 
-                        
+                        }
+
                       },
-            
+
                       gridLines: {
                           display:false
                       }
-                        
+
                   }]
         }
     }
   }); //end chart
 }
-
-
